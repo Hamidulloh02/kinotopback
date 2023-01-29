@@ -13,6 +13,8 @@ drf-yasg = "*"
 django-rest-swagger = "*"
 pillow = "*"
 django-ckeditor = "*"
+virtualenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 

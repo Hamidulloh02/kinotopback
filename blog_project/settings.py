@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', "[::1]", "10.6.13.185", "10.4.72.192", ]
+ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 # Application definition
 
@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'allauth.account',
     "drf_yasg",
     'rest_framework_swagger',
-
     # mahally
     'posts.apps.PostsConfig',
     'corsheaders',
@@ -150,7 +149,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles','static'))
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 #CKEDITOR CONFIG

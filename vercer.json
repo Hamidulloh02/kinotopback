@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "poll/wsgi.py",
+      "use": "@vercel/python",
+      "config": {"maxLambsize": "15mb", "runtime":"python3.9"}
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercer/static-build",
+      "config": {
+        "distDir": "staticfiles"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src":"/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "poll/wsgi.py"
+    }
+  ]
+}
