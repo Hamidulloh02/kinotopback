@@ -12,7 +12,8 @@
       "config": {
         "distDir": "staticfiles"
       }
-    }
+    },
+    { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
   ],
   "routes": [
     {
@@ -23,5 +24,6 @@
       "src": "/(.*)",
       "dest": "poll/wsgi.py"
     }
-  ]
+  ],
+
 }
