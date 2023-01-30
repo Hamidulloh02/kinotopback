@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0
 # SECRET_KEY = secrets_file["DJANGO"]["django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','*']
+ALLOWED_HOSTS = ['.pythonanywhere.app','127.0.0.1','*']
 
 # Application definition
 
