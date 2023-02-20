@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0
 # SECRET_KEY = secrets_file["DJANGO"]["django-insecure-cjc*6@5weex4o9yqyi=e^u2k^r+sns@_oga5_kazsc(wwk1&@0"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.pythonanywhere.app','127.0.0.1','*']
 
@@ -43,15 +43,9 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
-    'rest_framework.authtoken',
-    'dj_rest_auth',
-    'dj_rest_auth.registration',
-    'allauth',
-    'allauth.account',
     "drf_yasg",
     'rest_framework_swagger',
     # mahally
-    'posts.apps.PostsConfig',
     'corsheaders',
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
